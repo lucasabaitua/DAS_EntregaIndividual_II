@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroducirPrendas"
+    android:background="@color/black"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introducir prenda"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/montserratregular" />
+
+        <EditText
+            android:id="@+id/titulo_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/white"
+            android:hint="Titulo"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/desc_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/white"
+            android:hint="Descripcion"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Fecha compra"
+            android:inputType="date"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/boton_añadir_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Foto de la prenda" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guardar"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/button_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:onClick="onClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

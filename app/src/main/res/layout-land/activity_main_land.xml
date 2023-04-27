@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloPrendas"
+            android:layout_width="730dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="TU ARMARIO"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/botonCrearPrenda"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:onClick="IntroducirPrendas"
+            android:text="Añadir prenda" />
+
+        <ListView
+            android:id="@+id/lPrendas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
